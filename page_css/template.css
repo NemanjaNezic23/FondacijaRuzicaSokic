@@ -1,0 +1,452 @@
+
+
+.jumbotron {
+    background-image: linear-gradient( 110.7deg,  rgba(9,154,151,1) 6.3%, rgba(21,205,168,1) 90.6% );
+    font-size: 30px;
+    font-family: 'Gabriela', serif;
+    text-align: center;
+    color: var(--white);
+    font-weight: normal;
+    width: 100%; 
+		margin: 0;
+		opacity: 0.7;	
+}
+
+/* Logo */
+.jumbotron img {
+	width: 50%;
+	margin: 0;
+}
+
+/* Title text */
+.jumbotron p {
+	margin: 0;
+	line-height: 2;
+}
+
+/*navigation stuff*/
+.nav-container {
+	padding: 0;
+	opacity: 0.7;
+}
+
+.nav-item {
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    /* transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    border: 0.5px solid #41adb9; */
+}
+
+a.nav-link, a.nav-link::after, a.nav-link::before {
+	transition: all .8s;
+}
+
+.collapse a.nav-link:hover {
+	color: var(--dark)!important;	
+}
+
+.collapse a.nav-link::after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 0%;
+	content: '.';
+	color: transparent;
+	background: var(--gray);
+	height: 1px;
+}
+
+.collapse a.nav-link:hover::after {
+	width: 80%;
+}
+
+/* active tab bottom border */
+.nav li.active a::after {
+	width: 80%;
+	height: 2px;
+}
+
+.nav-item::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #3b5c63; 
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.6s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.nav-item:hover, .nav-item:focus, .nav-item:active {
+    color: var(--white);
+}
+
+.nav-link:hover {
+    color: var(--white) !important;
+}
+
+.navbar-container {
+    width: 68.7%;
+}
+
+.nav-item > a {
+    white-space: nowrap;
+}
+
+body {
+	background: -webkit-linear-gradient(top, #e2e2e2, #7b7b7b);;
+	font-family: 'Gabriela', serif;
+	font-size: 16px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.bg-light {
+	background: #d6d6d6 !important;
+	font-family: 'Gabriela', serif;
+
+}
+
+.nav-link {
+	color: #000000;
+}
+/* part with homepage texts */
+
+.mainText {
+    background-image: linear-gradient( 89.1deg,  rgba(55,64,77,1) 0.7%, rgba(66,156,193,1) 88.4% ); 
+    margin-top: 10%;
+    color: #fff;
+		font-family: 'Gabriela', serif;
+    text-align: center;
+    font-size: 16px;
+		margin-top: 70px;
+}
+
+.mainText > p {
+	margin-bottom: 0;
+}
+
+.showButton { 
+	background: rgba(9,154,151,1);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	
+}
+
+.media-body {
+	font-family: 'Gabriela', serif;
+}
+
+.container .mainTextBody {
+        background-color: #d6d6d6;
+        font-family: 'Gabriela', serif;
+        color: #484848;
+				text-align: right;
+				border-bottom: 1px solid #f1ebeb;
+				background: rgba(223, 223, 223, .5);
+}
+
+.card-text-padding {
+	padding: 0 50px;
+	text-align: left;
+	font-family: 'Gabriela', serif;
+	line-height: 25px;
+	margin-left: 206px;
+}
+
+/* Collapser Text */
+.first-text-collaps a, .sec-collaps a, .third-text-collaps a {
+	text-decoration: none;
+}
+
+.media {
+    text-align: left;
+}
+
+.media > img {
+    width: 20%;
+}
+
+/* Carousel img */
+#significant-roles {
+	margin: 20px auto;
+}
+
+#significant-roles img {
+	width: auto;
+	height: 450px;
+}
+
+
+
+.media .belgradeGrb {
+	width: 15%;
+	margin: 0px 0 0 25px;
+}
+
+.mainTextBody .card:nth-child(2) p {
+	margin-left: 30px; 
+}
+
+/* otvorena vrata kartica */
+#ov-img {
+	margin: 20px 0;
+}
+
+/* fotografije sa prve sesije */
+#prva img {
+	transform: rotate(-90deg);
+	zoom: .1;
+}
+
+/* Izdavastvo kartica */
+#moja-gluma img {
+	height: 500px;
+}
+
+/* footer parts*/
+
+.footer {
+    width: 70%;
+    height: 200px;
+    margin-left: 14.9%;
+    margin-top: 1px;
+    background-image: linear-gradient( 89.1deg,  rgba(55,64,77,1) 0.7%, rgba(66,156,193,1) 88.4% );
+
+
+
+}
+/* footer part */
+
+.footer-distributed{
+	background-image: linear-gradient( 89.1deg,  rgba(55,64,77,1) 0.7%, rgba(66,156,193,1) 88.4% );
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+    opacity: 0.9;
+
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Gabriela', serif;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  lightseagreen;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+	font-family: 'Gabriela', serif;
+	font-size: 12px;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+    font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+
+}
+
+.footer-distributed .footer-company-name{
+	color:  #928f71;
+	font-size: 12px;
+	font-weight: normal;
+	margin: 0;
+	font-family: 'Gabriela', serif;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 20px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 1.9;
+	margin: 10px 15px;
+	vertical-align: middle;
+
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+    font-weight:400;
+	vertical-align: middle;
+	margin:0;
+	font-family: 'Gabriela', serif;
+	font-size: 14px;
+
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color: rgba(21,205,168,1);
+	text-decoration: none;
+
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 13px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #ffffff;
+	font-size: 11px;
+	font-weight: normal;
+	margin: 0;
+	font-family: 'Gabriela', serif;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color: rgba(21,205,168,1);
+	font-size: 15px;
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-icons a{
+	color: #33383b;
+	text-decoration: none;
+	font-weight: 400;
+}
+
+.footer-icons a:hover {
+	color: #ffffff;
+	transition: color 1s;
+}
+
+@media (min-width: 576px) {
+	.jumbotron{
+	padding: 1rem;
+	}
+}
+
+/* lightbox card images */ 
+.card-img-top {
+	height: 320px;
+}
+.card {
+	background: #d6d6d6;
+}
+
+.footer-index {
+	padding:0;
+	margin:0;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+
+}
+
