@@ -1,13 +1,21 @@
-
-
-<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Фондација Ружице Сокић</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pace JS | Preloader</title>
+    <!-- cika_draza css -->
+    <link rel="stylesheet" href="draza_assets/CSS/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <!-- preloader ######## -->
+    <script src="draza_assets/JS/pace.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-bez@1.0.11/src/jquery.bez.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <!-- preloader ######## -->
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
     <link href="https://fonts.googleapis.com/css?family=EB+Garamond%7CGabriela&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=EB+Garamond%7CGabriela%7CKurale&display=swap" rel="stylesheet">
   <!-- Font Awesome -->
@@ -19,274 +27,288 @@
   <!-- Page custom styles -->
   <link href="./page_css/template.css" rel="stylesheet">
 </head>
-
-
-</head>
-
 <body>
+       
+    <div class="land-page"></div>
 
-    <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark scrolling-navbar fixed-top">
-      <!-- Collapse button -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- Collapsible content -->
-      <div class="collapse navbar-collapse" id="navigation">
-
-        <!-- Links -->
-        <ul class="nav nav-pills nav-fill mx-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Насловна
-                <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">O нама</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Награде</a>
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark scrolling-navbar fixed-top">
+        <!-- Collapse button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="navigation">
+  
+          <!-- Links -->
+          <ul class="nav nav-pills nav-fill mx-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Насловна
+                  <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="o_nama.html">O нама</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Награде</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="ruzica.html">Ружица <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="ruzica.html">Ружица <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item ">
-            <a class="nav-link" href="#">Донатори <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item ">
-            <a class="nav-link" href="otvorena_vrata.html">Отворена врата <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item ">
-            <a class="nav-link" href="izdavastvo.html">Издаваштво <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item ">
-            <a class="nav-link" href="vesti.html">Вести <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item ">
-            <a class="nav-link" href="#">Архива <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item ">
-            <a class="nav-link" href="#">Контакт <span class="sr-only">(current)</span></a>
-        </li>
-        </ul>
-        <!-- Links -->
-
-      </div>
-      <!-- Collapsible content -->
-
-    </nav>
-    <!--/.Navbar-->
-
-    <!--Carousel Wrapper-->
-    <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false">
-        <!--Indicators-->
-        <ol class="carousel-indicators">
-            <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-2" data-slide-to="1"></li>
-            <li data-target="#carousel-example-2" data-slide-to="2"></li>
-        </ol>
-        <!--/.Indicators-->
-
-        <!--Slides-->
-        <div class="carousel-inner" role="listbox">
-
-            <!--First slide-->
-            <div class="carousel-item active">
-                <!--Mask-->
-                <div class="view">
-                  <!--Video source-->
-                  <video autoplay loop playsinline muted>
-                      <source src="https://mdbootstrap.com/img/video/Lines.mp4" type="video/mp4" />
-                  </video>
-                  <!-- Carousel content -->
-                  <div class="full-bg-img flex-center mask rgba-indigo-light white-text">
-                    <ul class="animated fadeInUp col-md-12 list-unstyled list-inline">
-                      <li>
-                        <h1 class="font-weight-bold text-uppercase">ФОНДАЦИЈА РУЖИЦЕ СОКИЋ</h1>
-                      </li>
-                      <li>
-                        <p class="font-weight-bold py-4s subtext-slide">Фондација развија основна начела људске солидарности, хуманости и племенитости и у том циљу подстиче и награђује стваралаштво даровитих уметника и студената позоришне, филмске и других сродних уметности.</p>
-                      </li>
-                      <li class="list-inline-item">
-                        <a target="_blank" href="#" class="btn btn-unique btn-lg btn-rounded mr-0">Рад фондације</a>
-                      </li>
-                      <li class="list-inline-item">
-                        <a target="_blank" href="#" class="btn btn-cyan btn-lg btn-rounded ml-0">Награде фондације</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <!--/Mask-->
-            </div>
-            <!--/First slide-->
-
-            <!--Second slide-->
-            <div class="carousel-item ">
-                <!--Mask-->
-                <div class="view">
-                  <!--Video source-->
-                  <video autoplay loop playsinline muted>
-                      <source src="https://mdbootstrap.com/img/video/Lines.mp4" type="video/mp4" />
-                  </video>
-                  <!-- Carousel content -->
-                  <div class="full-bg-img flex-center mask rgba-indigo-light white-text">
-                    <ul class="animated fadeInUp col-md-12 list-unstyled list-inline">
-                      <li>
-                        <h1 class="font-weight-bold text-uppercase">ОТВОРЕНА ВРАТА</h1>
-                      </li>
-                      <li>
-                        <p class="font-weight-bold py-4 subtext-slide">Предавање о овој, јавности недовољно познатој теми, почецима позоришног живота у Србији – било је прожето занимљивим и необичним подацима, детаљима, примерима и анегдотама, које су га учиниле интересантним и динамичним</p>
-                      </li>
-                      <li class="list-inline-item">
-                        <a href="otvorena_vrata.html" class="btn btn-unique btn-lg btn-rounded mr-0">Погледај више</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <!--/Mask color-->
-            </div>
-            <!--/Second slide-->
-
-            <!--Third slide-->
-            <div class="carousel-item">
-                <!--Mask color-->
-                <div class="view">
+              <a class="nav-link" href="#">Донатори <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item ">
+              <a class="nav-link" href="otvorena_vrata.html">Отворена врата <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item ">
+              <a class="nav-link" href="izdavastvo.html">Издаваштво <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item ">
+              <a class="nav-link" href="vesti.html">Вести <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item ">
+              <a class="nav-link" href="#">Архива <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item ">
+              <a class="nav-link" href="contact.html">Контакт <span class="sr-only">(current)</span></a>
+          </li>
+          </ul>
+          <!-- Links -->
+  
+        </div>
+        <!-- Collapsible content -->
+  
+      </nav>
+      <!--/.Navbar-->
+  
+      <!--Carousel Wrapper-->
+      <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false">
+          <!--Indicators-->
+          <ol class="carousel-indicators">
+              <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-example-2" data-slide-to="1"></li>
+              <li data-target="#carousel-example-2" data-slide-to="2"></li>
+          </ol>
+          <!--/.Indicators-->
+  
+          <!--Slides-->
+          <div class="carousel-inner" role="listbox">
+  
+              <!--First slide-->
+              <div class="carousel-item active">
+                  <!--Mask-->
+                  <div class="view">
                     <!--Video source-->
                     <video autoplay loop playsinline muted>
                         <source src="https://mdbootstrap.com/img/video/Lines.mp4" type="video/mp4" />
                     </video>
                     <!-- Carousel content -->
-                    <div class="full-bg-img flex-center mask rgba-blue-light white-text">
-                      <ul class="animated fadeInUp col-md-12 list-unstyled">
+                    <div class="full-bg-img flex-center mask rgba-indigo-light white-text">
+                      <ul class="animated fadeInUp col-md-12 list-unstyled list-inline">
                         <li>
-                          <h1 class="font-weight-bold text-uppercase">Издаваштво</h1></li>
-                        <li>
-                          <p class="font-weight-bold  py-4 subtext-slide">Почетком ове године почели су припреме материјала за штампање књиге о Ружици Сокић и обављени начелни договори са приређивачем</p>
+                          <h1 class="font-weight-bold text-uppercase">ФОНДАЦИЈА РУЖИЦЕ СОКИЋ</h1>
                         </li>
                         <li>
-                          <a href="./izdavastvo.html" class="btn btn-lg btn-indigo btn-rounded">Погледај публикације</a>
+                          <p class="font-weight-bold py-4s subtext-slide">Фондација развија основна начела људске солидарности, хуманости и племенитости и у том циљу подстиче и награђује стваралаштво даровитих уметника и студената позоришне, филмске и других сродних уметности.</p>
+                        </li>
+                        <li class="list-inline-item">
+                          <a target="_blank" href="#" class="btn btn-unique btn-lg btn-rounded mr-0">Рад фондације</a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a target="_blank" href="#" class="btn btn-cyan btn-lg btn-rounded ml-0">Награде фондације</a>
                         </li>
                       </ul>
                     </div>
-                </div>
-                <!--/Mask color-->
-            </div>
-            <!--/Third slide-->
-        </div>
-
-        <!-- Fourth slid-->
-        <div class="carousel-item ">
-            <!--Mask-->
-            <div class="view">
-              <!--Video source-->
-              <video autoplay loop playsinline muted>
-                  <source src="https://mdbootstrap.com/img/video/Lines.mp4" type="video/mp4" />
-              </video>
-              <!-- Carousel content -->
-              <div class="full-bg-img flex-center mask rgba-indigo-light white-text">
-                <ul class="animated fadeInUp col-md-12 list-unstyled list-inline">
-                  <li>
-                    <h1 class="font-weight-bold text-uppercase">ОТВОРЕНА ВРАНА</h1>
-                  </li>
-                  <li>
-                    <p class="font-weight-bold py-4">Предавање о овој, јавности недовољно познатој теми, почецима позоришног живота у Србији – било је прожето занимљивим и необичним подацима, детаљима, примерима и анегдотама, које су га учиниле интересантним и динамичним</p>
-                  </li>
-                  <li class="list-inline-item">
-                    <a target="_blank" href="#" class="btn btn-unique btn-lg btn-rounded mr-0">Рад фондације</a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a  href="#" class="btn btn-cyan btn-lg btn-rounded ml-0">Награде фондације</a>
-                  </li>
-                </ul>
+                  </div>
+                  <!--/Mask-->
               </div>
-            </div>
-          <!--/Fourth slide-->
-        <!--/.Slides-->
-
-        <!--Controls-->
-        <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-        <!--/.Controls-->
-    </div>
-    <!--/.Carousel Wrapper-->
-
-<!--Footer-->
-<footer class="page-footer text-center text-md-left pt-4">
-  <!--Footer Links-->
-  <div class="container-fluid">
-    <div class="row">
-      <!--First column-->
-      <div class="col-md-3 offset-md-1">
-        <h5 class="font-weight-bold text-uppercase mb-4">фондација Ружице Сокић</h5>
-       <p> Фондација развија основна начела људске солидарности, хуманости и племенитости и у том циљу подстиче
-                    и награђује стваралаштво даровитих уметника и студената позоришне, филмске и других сродних
-                    уметности.</p>
+              <!--/First slide-->
+  
+              <!--Second slide-->
+              <div class="carousel-item ">
+                  <!--Mask-->
+                  <div class="view">
+                    <!--Video source-->
+                    <video autoplay loop playsinline muted>
+                        <source src="https://mdbootstrap.com/img/video/Lines.mp4" type="video/mp4" />
+                    </video>
+                    <!-- Carousel content -->
+                    <div class="full-bg-img flex-center mask rgba-indigo-light white-text">
+                      <ul class="animated fadeInUp col-md-12 list-unstyled list-inline">
+                        <li>
+                          <h1 class="font-weight-bold text-uppercase">ОТВОРЕНА ВРАТА</h1>
+                        </li>
+                        <li>
+                          <p class="font-weight-bold py-4 subtext-slide">Предавање о овој, јавности недовољно познатој теми, почецима позоришног живота у Србији – било је прожето занимљивим и необичним подацима, детаљима, примерима и анегдотама, које су га учиниле интересантним и динамичним</p>
+                        </li>
+                        <li class="list-inline-item">
+                          <a href="otvorena_vrata.html" class="btn btn-unique btn-lg btn-rounded mr-0">Погледај више</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!--/Mask color-->
+              </div>
+              <!--/Second slide-->
+  
+              <!--Third slide-->
+              <div class="carousel-item">
+                  <!--Mask color-->
+                  <div class="view">
+                      <!--Video source-->
+                      <video autoplay loop playsinline muted>
+                          <source src="https://mdbootstrap.com/img/video/Lines.mp4" type="video/mp4" />
+                      </video>
+                      <!-- Carousel content -->
+                      <div class="full-bg-img flex-center mask rgba-blue-light white-text">
+                        <ul class="animated fadeInUp col-md-12 list-unstyled">
+                          <li>
+                            <h1 class="font-weight-bold text-uppercase">Издаваштво</h1></li>
+                          <li>
+                            <p class="font-weight-bold  py-4 subtext-slide">Почетком ове године почели су припреме материјала за штампање књиге о Ружици Сокић и обављени начелни договори са приређивачем</p>
+                          </li>
+                          <li>
+                            <a href="./izdavastvo.html" class="btn btn-lg btn-indigo btn-rounded">Погледај публикације</a>
+                          </li>
+                        </ul>
+                      </div>
+                  </div>
+                  <!--/Mask color-->
+              </div>
+              <!--/Third slide-->
+          </div>
+  
+          <!-- Fourth slid-->
+          <div class="carousel-item ">
+              <!--Mask-->
+              <div class="view">
+                <!--Video source-->
+                <video autoplay loop playsinline muted>
+                    <source src="https://mdbootstrap.com/img/video/Lines.mp4" type="video/mp4" />
+                </video>
+                <!-- Carousel content -->
+                <div class="full-bg-img flex-center mask rgba-indigo-light white-text">
+                  <ul class="animated fadeInUp col-md-12 list-unstyled list-inline">
+                    <li>
+                      <h1 class="font-weight-bold text-uppercase">ОТВОРЕНА ВРАНА</h1>
+                    </li>
+                    <li>
+                      <p class="font-weight-bold py-4">Предавање о овој, јавности недовољно познатој теми, почецима позоришног живота у Србији – било је прожето занимљивим и необичним подацима, детаљима, примерима и анегдотама, које су га учиниле интересантним и динамичним</p>
+                    </li>
+                    <li class="list-inline-item">
+                      <a target="_blank" href="#" class="btn btn-unique btn-lg btn-rounded mr-0">Рад фондације</a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a  href="#" class="btn btn-cyan btn-lg btn-rounded ml-0">Награде фондације</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            <!--/Fourth slide-->
+          <!--/.Slides-->
+  
+          <!--Controls-->
+          <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+          </a>
+          <!--/.Controls-->
       </div>
-      <!--/.First column-->
-      <hr class="clearfix w-100 d-md-none">
-      <!--Second column-->
-      <div class="col-md-2 offset-md-1">
-        <ul class="list-unstyled">
-          <li class="mb-3"> <i class="fa fa-map-marker"></i>
-          <span class="p-2"> Крунска 50 Београд, Србија </span></li>
-          <li class="mb-3"><i class="fa fa-phone"></i>
-            <span class="p-2">011 243 4386, 011 3835 810  </span>
-          </li>
-          <li class="mb-3"><i class="fa fa-envelope"></i>
-            <a class="p-2" href="mailto:support@company.com">fondruzica@gmail.com</a></li>
-        </ul>
+      <!--/.Carousel Wrapper-->
+  
+  <!--Footer-->
+  <footer class="page-footer text-center text-md-left pt-4">
+    <!--Footer Links-->
+    <div class="container-fluid">
+      <div class="row">
+        <!--First column-->
+        <div class="col-md-3 offset-md-1">
+          <h5 class="font-weight-bold text-uppercase mb-4">фондација Ружице Сокић</h5>
+         <p> Фондација развија основна начела људске солидарности, хуманости и племенитости и у том циљу подстиче
+                      и награђује стваралаштво даровитих уметника и студената позоришне, филмске и других сродних
+                      уметности.</p>
+        </div>
+        <!--/.First column-->
+        <hr class="clearfix w-100 d-md-none">
+        <!--Second column-->
+        <div class="col-md-2 offset-md-1">
+          <ul class="list-unstyled">
+            <li class="mb-3"> <i class="fa fa-map-marker"></i>
+            <span class="p-2"> Крунска 50 Београд, Србија </span></li>
+            <li class="mb-3"><i class="fa fa-phone"></i>
+              <span class="p-2">011 243 4386, 011 3835 810  </span>
+            </li>
+            <li class="mb-3"><i class="fa fa-envelope"></i>
+              <a class="p-2" href="mailto:support@company.com">fondruzica@gmail.com</a></li>
+          </ul>
+        </div>
+        <!--/.Second column-->
+        <hr class="clearfix w-100 d-md-none">
+        <!--Third column-->
+        <div class="col-md-2 offset-md-2">
+          <ul class="list-unstyled">
+           <li> <a href="index.html" class="link-1">Насловна</a></li>
+           <li>  <a href="#">О нама</a></li>
+           <li>  <a href="#">Ружица</a></li>
+           <li>  <a href="#">Награде</a></li>
+           <li>  <a href="vesti.html">Вести</a></li>
+           <li>  <a href="#">Архива</a></li>
+           <li>  <a href="izdavastvo.html">Издаваштво</a></li>
+           <li>  <a href="#">Донатори</a></li>
+           <li>  <a href="#">Финансијски извештај</a></li>
+          </ul>
+        </div>
+        <!--/.Third column-->
+        <hr class="clearfix w-100 d-md-none">
       </div>
-      <!--/.Second column-->
-      <hr class="clearfix w-100 d-md-none">
-      <!--Third column-->
-      <div class="col-md-2 offset-md-2">
-        <ul class="list-unstyled">
-         <li> <a href="index.html" class="link-1">Насловна</a></li>
-         <li>  <a href="#">О нама</a></li>
-         <li>  <a href="#">Ружица</a></li>
-         <li>  <a href="#">Награде</a></li>
-         <li>  <a href="vesti.html">Вести</a></li>
-         <li>  <a href="#">Архива</a></li>
-         <li>  <a href="izdavastvo.html">Издаваштво</a></li>
-         <li>  <a href="#">Донатори</a></li>
-         <li>  <a href="#">Финансијски извештај</a></li>
-        </ul>
+    </div>
+    <!--/.Footer Links-->
+  
+    <!--Copyright-->
+    <div class="footer-copyright text-center">
+      <div class="container-fluid py-3">
+        © <script>document.write(new Date().getFullYear())</script> фондација Ружице Сокић 
       </div>
-      <!--/.Third column-->
-      <hr class="clearfix w-100 d-md-none">
     </div>
-  </div>
-  <!--/.Footer Links-->
+    <!--/.Copyright-->
+  </footer>
+  <!--/.Footer-->  
 
-  <!--Copyright-->
-  <div class="footer-copyright text-center">
-    <div class="container-fluid py-3">
-      © <script>document.write(new Date().getFullYear())</script> фондација Ружице Сокић 
+
+    <div class="logo">
+        <img src="draza_assets/img/Logo_2.png" alt="">
     </div>
-  </div>
-  <!--/.Copyright-->
-</footer>
-<!--/.Footer-->
 
-<!-- SCRIPTS -->
-  <!-- JQuery -->
-  <script type="text/javascript" src="./mdb/js/jquery-3.4.1.min.js"></script>
-  <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="./mdb/js/popper.min.js"></script>
-  <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="./mdb/js/bootstrap.min.js"></script>
-  <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="./mdb/js/mdb.min.js"></script>
-  <!-- utility script -->
-  <script type="text/javascript" src="./mdb/js/utility.js"></script>
+    <div id="preloader">
+        <div class="p">
+                  
+            Позивамо поштоваоце лика и дела Ружице Сокић, који уважавају циљеве ФОНДАЦИЈЕ РУЖИЦЕ СОКИЋ, да својим прилозима, у складу са могућностима, потпомогну њене активности. Динарски донаторски рачун код Рајфајзен банке а.д. Београд бр. <span>265 - 1610310003668-75</span> Девизни донатораски рачун код Рајфајзен банке а.д. Београд  <br>бр. <span>35265100000140100-52</span></div>
+        <div>
+            <img src="draza_assets/img/Mask Group 5.png" alt="">
+        </div>
+        <div>
+            <img src="draza_assets/img/Mask Group 6.png" alt="">
+        </div>
+        <div>
+            <img src="draza_assets/img/Mask Group 7.png" alt="">
+        </div>
+        <div>
+            <img src="draza_assets/img/Mask Group 8.png" alt="">
+        </div>
+        <div>
+            <img src="draza_assets/img/Mask Group 9.png" alt="">
+        </div>
+    </div>
+
+        
+<script src="draza_assets/JS/main.js"></script>
 
 </body>
-
 </html>
