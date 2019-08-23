@@ -1,19 +1,19 @@
 
     /* Navigation*/
 
-    .navbar {
+    .land-page .navbar {
       background-color: transparent;
     }
-    .scrolling-navbar {
+    .land-page .scrolling-navbar {
       transition: background .5s ease-in-out, padding .5s ease-in-out;
     }
-    .top-nav-collapse {
+    .land-page .top-nav-collapse {
         background-color: rgb(214, 214, 214);
         
     
     }
 
-    .top-nav-collapse .nav-link {
+    .land-page .top-nav-collapse .nav-link {
         color: #000000 !important;
     }
 

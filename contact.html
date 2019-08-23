@@ -4,24 +4,24 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Фондација Ружице Сокић</title>
-    <link href="https://fonts.googleapis.com/css?family=EB+Garamond%7CGabriela&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=EB+Garamond%7CGabriela%7CKurale&display=swap" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-    <!-- Bootstrap core CSS -->
-    <link href="./mdb/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Material Design Bootstrap -->
-    <link href="./mdb/css/mdb.min.css" rel="stylesheet">
-    <!-- Page custom styles -->
-    <link href="./page_css/home.css" rel="stylesheet">
-    <link href="./page_css/template.css" rel="stylesheet">
-    <link href="./mdb/css/contact_form.css" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Фондација Ружице Сокић</title>
+        <link href="https://fonts.googleapis.com/css?family=EB+Garamond%7CGabriela&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=EB+Garamond%7CGabriela%7CKurale&display=swap" rel="stylesheet">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <!-- Bootstrap core CSS -->
+        <link href="./mdb/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="./mdb/css/mdb.min.css" rel="stylesheet">
+        <!-- Page custom styles -->
+        <link href="./page_css/home.css" rel="stylesheet">
+        <link href="./page_css/template.css" rel="stylesheet">
+        <link href="./mdb/css/contact_form.css" rel="stylesheet">
 </head>
 
 
@@ -29,11 +29,44 @@
 
 <body>
 <style>
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-link {
+        color: black;
+    }
+
+    .collapse a.nav-link:hover {
+        color: var(--blue)!important;
+    }
+
+    .top-nav-collapse {
+        background-color: #82B1FF;
+    }
+
+    .top-nav-collapse .nav-link {
+        color: #ffff!important;
+    }
+
+    section {
+        position: relative;
+        top: 15%;
+        width: 100%;
+        height: 100%;
+    }
+
+    div.row {
+        height: 80%;
+    }
+
     .map-container-section {
         overflow:hidden;
-        padding-bottom:56.25%;
+        padding: 0;
+        margin: 0;
         position:relative;
-        height:0;
+        height: 500px;
     }
     .map-container-section iframe {
         left:0;
@@ -42,57 +75,69 @@
         width:100%;
         position:absolute;
     }
+
+    .col-lg-7 {
+      height: 715px;
+    }
+
+    footer {
+        position: absolute;
+        top: 120%;
+    }
+
 </style>
 <!--Navbar-->
 <nav class="navbar navbar-expand-lg navbar-dark scrolling-navbar fixed-top">
-
-    <!-- Navbar brand -->
-    <a class="navbar-brand" href="#"><img src="./assets/images/Logo_transp.png" style="width:60px; height:60px;" alt="fondacija_logo"></a>
-
     <!-- Collapse button -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
     </button>
 
     <!-- Collapsible content -->
     <div class="collapse navbar-collapse" id="navigation">
 
-        <!-- Links -->
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Насловна
-                    <span class="sr-only">(current)</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">O нама</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Награде</a>
-            </li>
-            <li class="nav-item ">
-                <a class="nav-link" href="ruzica.html">Ружица <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item ">
-                <a class="nav-link" href="#">Донатори <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item ">
-                <a class="nav-link" href="otvorena_vrata.html">Отворена врата <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item ">
-                <a class="nav-link" href="izdavastvo.html">Издаваштво <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item ">
-                <a class="nav-link" href="vesti.html">Вести <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item ">
-                <a class="nav-link" href="#">Архива <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item ">
-                <a class="nav-link" href="#">Контакт <span class="sr-only">(current)</span></a>
-            </li>
-        </ul>
-        <!-- Links -->
+      <!-- Links -->
+      <ul class="nav nav-pills nav-fill mx-auto">
+        <li class="nav-item">
+          <a class="nav-link " href="index.html">Насловна
+              <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="o_nama.html">O нама</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Награде</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="ruzica.html">Ружица <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item ">
+          <a class="nav-link" href="#">Донатори <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item ">
+          <a class="nav-link" href="otvorena_vrata.html">Отворена врата <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item ">
+          <a class="nav-link" href="izdavastvo.html">Издаваштво <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item ">
+          <a class="nav-link" href="vesti.html">Вести <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item ">
+          <a class="nav-link" href="#">Архива <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+          <a class="nav-link" href="contact.html">Контакт <span class="sr-only">(current)</span></a>
+      </li>
+      </ul>
+      <!-- Links -->
+
+    </div>
+    <!-- Collapsible content -->
+
+  </nav>
+  <!--/.Navbar-->
 
     </div>
     <!-- Collapsible content -->
@@ -101,167 +146,32 @@
 <!--/.Navbar-->
 
 <!--Carousel Wrapper-->
-<div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false">
-    <!--Indicators-->
-    <ol class="carousel-indicators">
-        <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-example-2" data-slide-to="1"></li>
-        <li data-target="#carousel-example-2" data-slide-to="2"></li>
-    </ol>
-    <!--/.Indicators-->
 
-    <!--Slides-->
-    <div class="carousel-inner" role="listbox">
-
-        <!--First slide-->
-        <div class="carousel-item active">
-            <!--Mask-->
-            <div class="view">
-                <!--Video source-->
-                <video autoplay loop playsinline muted>
-                    <source src="https://mdbootstrap.com/img/video/Lines.mp4" type="video/mp4" />
-                </video>
-                <!-- Carousel content -->
-                <div class="full-bg-img flex-center mask rgba-indigo-light white-text">
-                    <ul class="animated fadeInUp col-md-12 list-unstyled list-inline">
-                        <li>
-                            <h1 class="font-weight-bold text-uppercase">ФОНДАЦИЈА РУЖИЦЕ СОКИЋ</h1>
-                        </li>
-                        <li>
-                            <p class="font-weight-bold py-4s subtext-slide">Фондација развија основна начела људске солидарности, хуманости и племенитости и у том циљу подстиче и награђује стваралаштво даровитих уметника и студената позоришне, филмске и других сродних уметности.</p>
-                        </li>
-                        <li class="list-inline-item">
-                            <a target="_blank" href="#" class="btn btn-unique btn-lg btn-rounded mr-0">Рад фондације</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a target="_blank" href="#" class="btn btn-cyan btn-lg btn-rounded ml-0">Награде фондације</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!--/Mask-->
-        </div>
-        <!--/First slide-->
-
-        <!--Second slide-->
-        <div class="carousel-item ">
-            <!--Mask-->
-            <div class="view">
-                <!--Video source-->
-                <video autoplay loop playsinline muted>
-                    <source src="https://mdbootstrap.com/img/video/Lines.mp4" type="video/mp4" />
-                </video>
-                <!-- Carousel content -->
-                <div class="full-bg-img flex-center mask rgba-indigo-light white-text">
-                    <ul class="animated fadeInUp col-md-12 list-unstyled list-inline">
-                        <li>
-                            <h1 class="font-weight-bold text-uppercase">ОТВОРЕНА ВРАТА</h1>
-                        </li>
-                        <li>
-                            <p class="font-weight-bold py-4 subtext-slide">Предавање о овој, јавности недовољно познатој теми, почецима позоришног живота у Србији – било је прожето занимљивим и необичним подацима, детаљима, примерима и анегдотама, које су га учиниле интересантним и динамичним</p>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="otvorena_vrata.html" class="btn btn-unique btn-lg btn-rounded mr-0">Погледај више</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!--/Mask color-->
-        </div>
-        <!--/Second slide-->
-
-        <!--Third slide-->
-        <div class="carousel-item">
-            <!--Mask color-->
-            <div class="view">
-                <!--Video source-->
-                <video autoplay loop playsinline muted>
-                    <source src="https://mdbootstrap.com/img/video/Lines.mp4" type="video/mp4" />
-                </video>
-                <!-- Carousel content -->
-                <div class="full-bg-img flex-center mask rgba-blue-light white-text">
-                    <ul class="animated fadeInUp col-md-12 list-unstyled">
-                        <li>
-                            <h1 class="font-weight-bold text-uppercase">Издаваштво</h1></li>
-                        <li>
-                            <p class="font-weight-bold  py-4 subtext-slide">Почетком ове године почели су припреме материјала за штампање књиге о Ружици Сокић и обављени начелни договори са приређивачем</p>
-                        </li>
-                        <li>
-                            <a href="./izdavastvo.html" class="btn btn-lg btn-indigo btn-rounded">Погледај публикације</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!--/Mask color-->
-        </div>
-        <!--/Third slide-->
-    </div>
-
-    <!-- Fourth slid-->
-    <div class="carousel-item ">
-        <!--Mask-->
-        <div class="view">
-            <!--Video source-->
-            <video autoplay loop playsinline muted>
-                <source src="https://mdbootstrap.com/img/video/Lines.mp4" type="video/mp4" />
-            </video>
-            <!-- Carousel content -->
-            <div class="full-bg-img flex-center mask rgba-indigo-light white-text">
-                <ul class="animated fadeInUp col-md-12 list-unstyled list-inline">
-                    <li>
-                        <h1 class="font-weight-bold text-uppercase">ОТВОРЕНА ВРАНА</h1>
-                    </li>
-                    <li>
-                        <p class="font-weight-bold py-4">Предавање о овој, јавности недовољно познатој теми, почецима позоришног живота у Србији – било је прожето занимљивим и необичним подацима, детаљима, примерима и анегдотама, које су га учиниле интересантним и динамичним</p>
-                    </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="#" class="btn btn-unique btn-lg btn-rounded mr-0">Рад фондације</a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a  href="#" class="btn btn-cyan btn-lg btn-rounded ml-0">Награде фондације</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!--/Fourth slide-->
-        <!--/.Slides-->
-
-        <!--Controls-->
-        <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-        <!--/.Controls-->
-    </div>
     <!--/.Carousel Wrapper-->
     <!-- Section: Contact v.1 -->
-    <section class="my-5">
+    <section class="mb-5">
 
         <!-- Section heading -->
-        <h2 class="h1-responsive font-weight-bold text-center my-5">Контактирајте нас</h2>
+        <h2 class="h1-responsive font-weight-bold text-center mb-5 ">Контактирајте нас</h2>
         <!-- Section description -->
         <p class="text-center w-responsive mx-auto pb-5">Фондација развија основна начела људске солидарности, хуманости и племенитости и у
             том циљу подстиче и награђује стваралаштво даровитих уметника и студената позоришне,
             филмске и других сродних уметности.</p>
 
         <!-- Grid row -->
-        <div class="row">
+        <div class="row col-lg-12">
 
             <!-- Grid column -->
             <div class="col-lg-5 mb-lg-0 mb-4">
 
                 <!-- Form with header -->
                 <div class="card">
-                    <div class="card-body">
+                    <div class="card-body m-5">
                         <!-- Header -->
                         <div class="form-header blue accent-1">
                             <h3 class="mt-2"><i class="fas fa-envelope"></i> Пишите нам:</h3>
                         </div>
-                        <p class="dark-grey-text">Како би унапредили свој рад, много нам значи свако мишљење, критика или сугестија.
+                        <p class="dark-grey-text text-center">Уколико имате питања везаних за наше пословање, молимо вас попуните форму 
                         </p>
                         <!-- Body -->
                         <div class="md-form">
@@ -295,15 +205,13 @@
             <!-- Grid column -->
 
             <!-- Grid column -->
-            <div class="col-lg-7">
-
+            <div class="z-depth-1-half col-lg-7 p-0">
                 <!--Google map-->
-                <div id="map-container-section" class="z-depth-1-half map-container-section mb-4" style="height: 400px">
-                    <iframe src="https://maps.google.com/maps?q=Manhatan&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0"
-                            style="border:0" allowfullscreen></iframe>
+                <div id="map-container-section" class="map-container-section m-3" style="height: 500px">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1415.4002876995683!2d20.468907258217865!3d44.80525269781934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7aa0df4c9a6f%3A0xc3bdd939f9646e6f!2z0JrRgNGD0L3RgdC60LAgNTAsINCR0LXQvtCz0YDQsNC0IDExMDAw!5e0!3m2!1ssr!2srs!4v1566480324138!5m2!1ssr!2srs" width="400" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
                 <!-- Buttons-->
-                <div class="row text-center">
+                <div class="row col-lg-12 text-center h-25">
                     <div class="col-md-4">
                         <a class="btn-floating blue accent-1">
                             <i class="fas fa-map-marker-alt"></i>
@@ -336,7 +244,7 @@
     <!-- Section: Contact v.1 -->
     <!--Footer-->
     <!-- Footer -->
-    <div class="container-fluid footer-index">
+    <div class="container-fluid footer-index p-0">
         <footer class="footer-distributed">
 
             <div class="footer-left">
@@ -348,9 +256,9 @@
                 <p class="footer-links">
                     <a href="index.html" class="link-1">Насловна</a>
 
-                    <a href="#">О нама</a>
+                    <a href="o_nama.html">О нама</a>
 
-                    <a href="#">Ружица</a>
+                    <a href="ruzica.html">Ружица</a>
 
                     <a href="#">Награде</a>
 
