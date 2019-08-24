@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -244,9 +242,6 @@
         <!-- Section heading -->
         <h2 class="h1-responsive font-weight-bold text-center my-5">Контактирајте нас</h2>
         <!-- Section description -->
-        <p class="text-center w-responsive mx-auto pb-5">Фондација развија основна начела људске солидарности, хуманости и племенитости и у
-            том циљу подстиче и награђује стваралаштво даровитих уметника и студената позоришне,
-            филмске и других сродних уметности.</p>
 
         <!-- Grid row -->
         <div class="row">
@@ -263,34 +258,72 @@
                         </div>
                         <p class="dark-grey-text">Како би унапредили свој рад, много нам значи свако мишљење, критика или сугестија.
                         </p>
+                     <form id="contact-form" name="contact-form" action="contact.html" method="POST"></form>
                         <!-- Body -->
                         <div class="md-form">
                             <i class="fas fa-user prefix grey-text"></i>
                             <input type="text" id="form-name" class="form-control">
                             <label for="form-name">Име</label>
+                            <div id="statusN"></div>
                         </div>
                         <div class="md-form">
                             <i class="fas fa-envelope prefix grey-text"></i>
                             <input type="text" id="form-email" class="form-control">
                             <label for="form-email">Емаил</label>
+                            <div id="statusE"></div>
                         </div>
                         <div class="md-form">
                             <i class="fas fa-tag prefix grey-text"></i>
                             <input type="text" id="form-Subject" class="form-control">
                             <label for="form-Subject">Наслов</label>
+                            <div id="statusS"></div>
                         </div>
                         <div class="md-form">
                             <i class="fas fa-pencil-alt prefix grey-text"></i>
                             <textarea id="form-text" class="form-control md-textarea" rows="3"></textarea>
                             <label for="form-text">Порука</label>
+                            <div id="statusM"></div>
                         </div>
-                        <a class="btn-floating btn-lg blue">
+                        <a class="btn-floating btn-lg blue" onclick="validateForm();">
                             <i class="far fa-paper-plane"></i>
-                          </a>
+                        </a>
+                    </form>
+                    <div id="statur"></div>
+                    <script>
+                    function validateForm() {
+var name =  document.getElementById('form-name').value;
+if (name == "") {
+    document.getElementById('statusN').innerHTML = "Name cannot be empty";
+    return false;
+}
+var email =  document.getElementById('form-email').value;
+if (email == "") {
+    document.getElementById('statusE').innerHTML = "Email cannot be empty";
+    return false;
+} else {
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if(!re.test(email)){
+        document.getElementById('statusE').innerHTML = "Email format invalid";
+        return false;
+    }
+}
+var subject =  document.getElementById('form-Subject').value;
+if (subject == "") {
+    document.getElementById('statusS').innerHTML = "Subject cannot be empty";
+    return false;
+}
+var message =  document.getElementById('form-text').value;
+if (message == "") {
+    document.getElementById('statusM').innerHTML = "Message cannot be empty";
+    return false;
+}
+document.getElementById('status').innerHTML = "Sending...";
+document.getElementById('contact-form').submit();
+}
+                    </script>
                     </div>
                 </div>
                 <!-- Form with header -->
-
             </div>
             <!-- Grid column -->
 
