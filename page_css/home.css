@@ -1,33 +1,22 @@
 
-    /* Navigation*/
-
-    .land-page .navbar {
-      background-color: transparent;
-    }
-    .land-page .scrolling-navbar {
-      transition: background .5s ease-in-out, padding .5s ease-in-out;
-    }
-    .land-page .top-nav-collapse {
-        background-color: rgb(214, 214, 214);
-        
-    
-    }
-
-    .land-page .top-nav-collapse .nav-link {
-        color: #000000 !important;
-    }
-
-    footer.page-footer {
-      background-color: #34456a;
-    }
-
-
-    @media only screen and (max-width: 768px) {
-      .navbar {
-        background-color: rgb(214, 214, 214) !important;
-      }
-    }
-
+ /* Navigation*/
+ .navbar {
+  background-color: transparent;
+}
+.scrolling-navbar {
+  transition: background .5s ease-in-out, padding .5s ease-in-out;
+}
+.top-nav-collapse {
+  background-color: #34456a;
+}
+footer.page-footer {
+  background-color: #34456a;
+}
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color: #34456a;
+  }
+}
     /* Necessary for full page carousel*/
     html,
     body,
@@ -61,4 +50,18 @@
 
     html, body {
     	font-family: 'Gabriela', serif;
+    }
+
+    .logo {
+      position: absolute;
+      top: 18%;
+      left: 45%;
+      z-index: 2;
+      box-sizing: border-box;
+
+    }
+
+    .logo > img {
+      width: 150px;
+      height: 150px;
     }

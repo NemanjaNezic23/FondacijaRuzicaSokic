@@ -19,6 +19,7 @@
         <script src="https://kit.fontawesome.com/f12fff2307.js"></script>
         <!-- old version important -->
         <link href="page_css/oldVersion css/template.css" rel="stylesheet">
+        <link rel="stylesheet" href="./page_css/template.css">
     </head>
     
 
@@ -26,73 +27,58 @@
 
 <body>
 
-    <!-- Container Header and Nav bar -->
-    <div class="container">
-
-        <div class="jumbotron jumbotron-fluid row">
-
-            <div class="flex-row col-sm-2">
-                <a href="fondacija-template.html"><img src="img/Logo_transp_2.png" alt=""></a>
-            </div>
-
-            <div class="flex-row col-sm-8 align-items-center">
-                <p class="display-5">ФОНДАЦИЈА РУЖИЦЕ СОКИЋ</p>
-            </div>
-
-            <div class="col-sm-2">
-                <ul class="navbar-nav flex-row">
-                        <li><a class="nav-link px-2" href="#"><span class="fab fa-youtube" title="YouTube"></span></a></li>  
-                        <li><a class="nav-link px-2" href="#"><span class="fab fa-instagram" title="Instagram"></span></a></li>
-                </ul>
-            </div>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark scrolling-navbar fixed-top">
+        <!-- Collapse button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="navigation">
+  
+          <!-- Links -->
+          <ul class="nav nav-pills nav-fill mx-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Насловна
+                  <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">O нама</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Награде</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="ruzica.html">Ружица <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item ">
+              <a class="nav-link" href="#">Донатори <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item ">
+              <a class="nav-link" href="otvorena_vrata.html">Отворена врата <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item ">
+              <a class="nav-link" href="izdavastvo.html">Издаваштво <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item ">
+              <a class="nav-link" href="vesti.html">Вести <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item ">
+              <a class="nav-link" href="#">Архива <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item ">
+              <a class="nav-link" href="#">Контакт <span class="sr-only">(current)</span></a>
+          </li>
+          </ul>
+          <!-- Links -->
+  
         </div>
-
-        <div class="container nav-container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTemp"
-                    aria-controls="navbarTemp" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>               
-
-                <div class="collapse navbar-collapse" id="navbarTemp">
-                    <ul class="nav nav-pills nav-fill">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Насловна </a>
-                        </li>
-                        <li class="nav-item active">
-                          <a class="nav-link" href="o_nama.html">О нама<span class="sr-only">(current)</span></a>
-                      </li>
-                        <li class="nav-item ">
-                            <a class="nav-link" href="#">Награде</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link" href="ruzica.html">Ружица <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Донатори <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="otvorena_vrata.html">Отворена врата <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="izdavastvo.html">Издаваштво <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="vesti.html">Вести <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link" href="#">Архива <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link" href="contact.html">Контакт <span class="sr-only">(current)</span></a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-    </div>
-<!-- ########################################### -->
-
+        <!-- Collapsible content -->
+  
+      </nav>
+      <!--/.Navbar-->
 <!-- Container Main Content -->
     <div class="container">
         <div class="mainText p-3">
@@ -158,93 +144,75 @@
         </div>  
     </div>
   
-    <!-- Footer -->
-    <div class="container">
-        <footer class="footer-distributed">
-
-            <div class="footer-left">
-
-                <div class="text-center col-10">
-                    <img src="img/Logo_2.png" alt="" class="w-25">
-                </div>
-
-                <p class="footer-links">
-                    <a href="index.html" class="link-1">Насловна</a>
-
-                    <a href="o_nama.html">О нама</a>
-
-                    <a href="#">Ружица</a>
-
-                    <a href="#">Награде</a>
-
-                    <a href="vesti.html">Вести</a>
-
-                    <a href="#">Архива</a>
-
-                    <a href="izdavastvo.html">Издаваштво</a>
-
-                    <a href="#">Донатори</a>
-
-                    <a href="#">Финансијски извештај</a>
-                </p>
-
-
-                <p class="footer-company-name">Фондација Ружице Сокић © 2019</p>
-            </div>
-
-            <div class="footer-center">
-
-                <div>
-                    <i class="fas fa-map-marker-alt"></i>
-                    <p><span>Крунска 50</span> Београд, Србија</p>
-                </div>
-
-                <div>
-                    <i class="fa fa-phone"></i>
-                    <p>011 243 4386, 011 3835 810</p>
-                </div>
-
-                <div>
-                    <i class="fa fa-envelope"></i>
-                    <p><a href="mailto:support@company.com">fondruzica@gmail.com</a></p>
-                </div>
-
-            </div>
-
-            <div class="footer-right">
-
-                <p class="footer-company-about">
-                    <span>фондација Ружице Сокић</span>
-                    Фондација развија основна начела људске солидарности, хуманости и племенитости и у том циљу подстиче
-                    и награђује стваралаштво даровитих уметника и студената позоришне, филмске и других сродних
-                    уметности.
-                </p>
-
-                <div class="footer-icons d-flex">
-                    <a href="#"><i class="fab fa-youtube fa-2x" title="YouTube"></i></a>
-                    <a href="#"><i class="fab fa-instagram fa-2x mx-3 d-flex justify-content-end" title="Instagram"></i></a>
-                </div>
-
-            </div>
-
-        </footer>
+  <!--Footer-->
+<footer class="page-footer text-center text-md-left pt-4">
+    <!--Footer Links-->
+    <div class="container-fluid">
+      <div class="row">
+        <!--First column-->
+        <div class="col-md-3 offset-md-1">
+          <h5 class="font-weight-bold text-uppercase mb-4">фондација Ружице Сокић</h5>
+         <p> Фондација развија основна начела људске солидарности, хуманости и племенитости и у том циљу подстиче
+                      и награђује стваралаштво даровитих уметника и студената позоришне, филмске и других сродних
+                      уметности.</p>
+        </div>
+        <!--/.First column-->
+        <hr class="clearfix w-100 d-md-none">
+        <!--Second column-->
+        <div class="col-md-2 offset-md-1">
+          <ul class="list-unstyled">
+            <li class="mb-3"> <i class="fa fa-map-marker"></i>
+            <span class="p-2"> Крунска 50 Београд, Србија </span></li>
+            <li class="mb-3"><i class="fa fa-phone"></i>
+              <span class="p-2">011 243 4386, 011 3835 810  </span>
+            </li>
+            <li class="mb-3"><i class="fa fa-envelope"></i>
+              <a class="p-2" href="mailto:support@company.com">fondruzica@gmail.com</a></li>
+          </ul>
+        </div>
+        <!--/.Second column-->
+        <hr class="clearfix w-100 d-md-none">
+        <!--Third column-->
+        <div class="col-md-2 offset-md-2">
+          <ul class="list-unstyled">
+           <li> <a href="index.html" class="link-1">Насловна</a></li>
+           <li>  <a href="#">О нама</a></li>
+           <li>  <a href="#">Ружица</a></li>
+           <li>  <a href="#">Награде</a></li>
+           <li>  <a href="vesti.html">Вести</a></li>
+           <li>  <a href="#">Архива</a></li>
+           <li>  <a href="izdavastvo.html">Издаваштво</a></li>
+           <li>  <a href="#">Донатори</a></li>
+           <li>  <a href="#">Финансијски извештај</a></li>
+          </ul>
+        </div>
+        <!--/.Third column-->
+        <hr class="clearfix w-100 d-md-none">
+      </div>
     </div>
-
-    </footer>
-
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-    <script src="./utility/utility.js"></script>
-
-    <script src="mdb/js/collapser js/jquery-1.10.2.min.js"></script>
-    <script src="mdb/js/collapser js/jquery.collapser.js"></script>
-    <script src="mdb/js/collapser js/main.js"></script>
-
+    <!--/.Footer Links-->
+  
+    <!--Copyright-->
+    <div class="footer-copyright text-center">
+      <div class="container-fluid py-3">
+        © <script>document.write(new Date().getFullYear())</script> фондација Ружице Сокић 
+      </div>
+    </div>
+    <!--/.Copyright-->
+  </footer>
+  <!--/.Footer-->
+  
+  <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="./mdb/js/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="./mdb/js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="./mdb/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="./mdb/js/mdb.min.js"></script>
+    <!-- utility script -->
+    <script type="text/javascript" src="./mdb/js/utility.js"></script>
+  
  </body>
 </html>
