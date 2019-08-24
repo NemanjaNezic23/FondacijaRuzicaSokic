@@ -1,0 +1,25 @@
+.navbar {
+    background:#34456a;
+
+}
+
+.nav-link {
+    color: #fff;
+}
+
+footer.page-footer {
+    background-color: #34456a;
+  }
+  @media only screen and (max-width: 768px) {
+    .navbar {
+      background-color: #34456a;
+    }
+  }
+
+  /* Necessary for full page carousel*/
+  html,
+  body,
+  .view {
+    height: 100%;
+    font-family: 'Gabriela', serif !important;
+  }
