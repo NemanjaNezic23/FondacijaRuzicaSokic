@@ -1,4 +1,9 @@
 .navbar {
     background:#34456a;
+    
+}
 
+.card {
+    background: #d6d6d6;
+	font-family: 'Gabriela', serif !important;
 }
