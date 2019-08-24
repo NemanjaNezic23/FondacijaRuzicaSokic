@@ -11,3 +11,17 @@
     margin-top: 15px;
     margin-bottom: 15px;
   }
+
+ .navbar {
+    background:#34456a;
+    
+}
+body {
+    height: 0;
+
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+}

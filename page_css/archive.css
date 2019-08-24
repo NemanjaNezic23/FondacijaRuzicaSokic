@@ -29,3 +29,17 @@
     height: 20px;
     z-index: 400;
 }
+
+.navbar {
+    background:#34456a;
+    
+}
+body {
+    height: 0;
+
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+}
