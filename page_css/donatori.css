@@ -16,12 +16,13 @@
     background:#34456a;
     
 }
-body {
-    height: 0;
 
+body {
+  height: 0;
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }
