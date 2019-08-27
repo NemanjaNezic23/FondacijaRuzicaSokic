@@ -172,15 +172,6 @@ a.nav-link, a.nav-link::after, a.nav-link::before {
 .nav-item > a {
     white-space: nowrap;
 }
-/* 
-body {
-	background: -webkit-linear-gradient(top, #e2e2e2, #7b7b7b);;
-	font-family: 'Gabriela', serif;
-	font-size: 16px;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-} */
 
 .bg-light {
 	background: #d6d6d6 !important;
