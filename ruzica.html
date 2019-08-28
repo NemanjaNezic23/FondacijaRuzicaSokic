@@ -23,7 +23,23 @@
 
 
 <body>
+<script type="text/javascript">
+$('.carousel.carousel-multi-item.v-2 .carousel-item').each(function(){
+  var next = $(this).next();
+  if (!next.length) {
+    next = $(this).siblings(':first');
+  }
+  next.children(':first-child').clone().appendTo($(this));
 
+  for (var i=0;i<4;i++) {
+    next=next.next();
+    if (!next.length) {
+      next=$(this).siblings(':first');
+    }
+    next.children(':first-child').clone().appendTo($(this));
+  }
+});
+</script>
 
   <!--Navbar-->
   <nav class="navbar navbar-expand-lg navbar-dark scrolling-navbar fixed-top">
@@ -105,7 +121,9 @@
             телевизијских улога, 57 у тв-серијама, 199 радио-улога и на филму 51 улогу. Занимљиво је да је позоришне
             улоге остваривала у двадесет једном позоришном окриљу. Истакла се као тумач лирских, комичних и
             трагикомичних улога, нарочито у савременом репертоару домаћих драматичара и страним делима авангарде и
-            модерне драматургије. У Току богатог глумачког живота добила је велики број награда: Прва награда на
+            модерне драматургије. 
+            
+            У Току богатог глумачког живота добила је велики број награда: Прва награда на
             Југословенском телевизијском фестивалу Блед 65, за улогу у ТВ драми Девојка са три оца, 1965; Сребрна арена
             у Пули за улогу у филму Горки део реке, 1965; Стеријина наград за улогу Милеве у Крмећем касу А. Поповића,
             1966; Статуета “Ћуран” за улогу Мир-Јам у представи Рањени орао на Данима комедије у Светозареву 1974;
@@ -129,7 +147,192 @@
             (1934-2013.)
           </p>
         </div>
+<!--Carousel Wrapper-->
+<div id="carousel-with-lb" class="carousel slide carousel-multi-item" data-ride="carousel">
 
+    <!--Controls-->
+    <div class="controls-top">
+      <a class="btn-floating btn-secondary" href="#carousel-with-lb" data-slide="prev"><i
+          class="fas fa-chevron-left"></i></a>
+      <a class="btn-floating btn-secondary" href="#carousel-with-lb" data-slide="next"><i
+          class="fas fa-chevron-right"></i></a>
+    </div>
+    <!--/.Controls-->
+  
+    <!--Indicators-->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-with-lb" data-slide-to="0" class="active secondary-color"></li>
+      <li data-target="#carousel-with-lb" data-slide-to="1" class="secondary-color"></li>
+      <li data-target="#carousel-with-lb" data-slide-to="2" class="secondary-color"></li>
+    </ol>
+    <!--/.Indicators-->
+  
+    <!--Slides and lightbox-->
+  
+    <div class="carousel-inner mdb-lightbox" role="listbox">
+      <div id="mdb-lightbox-ui"></div>
+      <!--First slide-->
+      <div class=" carousel-item active text-center">
+  
+        <figure class="col-md-4 d-md-inline-block">
+            <a href="./assets/prices/001.jpg"
+            data-size="1600x1067">
+            <img src="./assets/prices/001.jpg"
+              class="img-fluid">
+          </a>
+        </figure>
+  
+        <figure class="col-md-4 d-md-inline-block">
+          <a href="./assets/prices/003.jpg"
+            data-size="1600x1067">
+            <img src="./assets/prices/003.jpg"
+              class="img-fluid">
+          </a>
+        </figure>
+  
+        <figure class="col-md-4 d-md-inline-block">
+          <a href="./assets/prices/005.jpg"
+            data-size="1600x1067">
+            <img src="./assets/prices/005.jpg"
+              class="img-fluid">
+          </a>
+        </figure>
+  
+        <figure class="col-md-4 d-md-inline-block">
+          <a href="./assets/prices/007.jpg"
+            data-size="1600x1067">
+            <img src="./assets/prices/007.jpg"
+              class="img-fluid">
+          </a>
+        </figure>
+        <figure class="col-md-4 d-md-inline-block">
+          <a href="./assets/prices/009.jpg"
+            data-size="1600x1067">
+            <img src="./assets/prices/009.jpg"
+              class="img-fluid">
+          </a>
+        </figure>
+        <figure class="col-md-4 d-md-inline-block">
+          <a href="./assets/prices/011.jpg"
+            data-size="1600x1067">
+            <img src="./assets/prices/011.jpg"
+              class="img-fluid">
+          </a>
+        </figure>
+  
+      </div>
+      <!--/.First slide-->
+  
+      <!--Second slide-->
+      <div class="carousel-item text-center">
+  
+          <figure class="col-md-4 d-md-inline-block">
+              <a href="./assets/prices/013.jpg"
+                data-size="1600x1067">
+                <img src="./assets/prices/013.jpg"
+                  class="img-fluid">
+              </a>
+            </figure>
+  
+            <figure class="col-md-4 d-md-inline-block">
+                <a href="./assets/prices/015.jpg"
+                  data-size="1600x1067">
+                  <img src="./assets/prices/015.jpg"
+                    class="img-fluid">
+                </a>
+              </figure>
+  
+              <figure class="col-md-4 d-md-inline-block">
+                  <a href="./assets/prices/018.jpg"
+                    data-size="1600x1067">
+                    <img src="./assets/prices/018.jpg"
+                      class="img-fluid">
+                  </a>
+                </figure>
+
+                <figure class="col-md-4 d-md-inline-block">
+                    <a href="./assets/prices/019.jpg"
+                      data-size="1600x1067">
+                      <img src="./assets/prices/019.jpg"
+                        class="img-fluid">
+                    </a>
+                  </figure>
+  
+                <figure class="col-md-4 d-md-inline-block">
+                    <a href="./assets/prices/021.jpg"
+                      data-size="1600x1067">
+                      <img src="./assets/prices/021.jpg"
+                        class="img-fluid">
+                    </a>
+                  </figure>
+                  <figure class="col-md-4 d-md-inline-block">
+                      <a href="./assets/prices/023.jpg"
+                        data-size="1600x1067">
+                        <img src="./assets/prices/023.jpg"
+                          class="img-fluid">
+                      </a>
+                    </figure>
+  
+      </div>
+      <!--/.Second slide-->
+  
+      <!--Third slide-->
+      <div class="carousel-item text-center">
+  
+          <figure class="col-md-4 d-md-inline-block">
+              <a href="./assets/prices/026.jpg"
+                data-size="1600x1067">
+                <img src="./assets/prices/026.jpg"
+                  class="img-fluid">
+              </a>
+            </figure>
+  
+            <figure class="col-md-4 d-md-inline-block">
+                <a href="./assets/prices/027.jpg"
+                  data-size="1600x1067">
+                  <img src="./assets/prices/027.jpg"
+                    class="img-fluid">
+                </a>
+              </figure>
+  
+              <figure class="col-md-4 d-md-inline-block">
+                  <a href="./assets/prices/028.jpg"
+                    data-size="1600x1067">
+                    <img src="./assets/prices/028.jpg"
+                      class="img-fluid">
+                  </a>
+                </figure>
+  
+                <figure class="col-md-4 d-md-inline-block">
+                    <a href="./assets/prices/029.jpg"
+                      data-size="1600x1067">
+                      <img src="./assets/prices/029.jpg"
+                        class="img-fluid">
+                    </a>
+                  </figure>
+                  <figure class="col-md-4 d-md-inline-block">
+                      <a href="./assets/prices/030.jpg"
+                        data-size="1600x1067">
+                        <img src="./assets/prices/030.jpg"
+                          class="img-fluid">
+                      </a>
+                    </figure>
+                    <figure class="col-md-4 d-md-inline-block">
+                        <a href="./assets/prices/031.jpg"
+                          data-size="1600x1067">
+                          <img src="./assets/prices/031.jpg"
+                            class="img-fluid">
+                        </a>
+                      </figure>
+  
+      </div>
+      <!--/.Third slide-->
+  
+    </div>
+    <!--/.Slides-->
+  
+  </div>
+  <!--/.Carousel Wrapper-->
       </div>
     </div>
   </div>
@@ -202,7 +405,7 @@
   <script type="text/javascript" src="./mdb/js/mdb.min.js"></script>
   <!-- utility script -->
   <script type="text/javascript" src="./mdb/js/utility.js"></script>
-
+<script type="text/javascript" src="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/js/compiled-4.8.8.min.js"></script>
 </body>
 
 </html>
