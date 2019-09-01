@@ -288,3 +288,9 @@ box-shadow: -1px 2px 21px 0px rgba(0,0,0,0.75);
     position: relative;
   }
 }
+
+@media only screen and (max-width: 991px) {
+  .navbar {
+    background-color: #34456a !important;
+  }
+}
