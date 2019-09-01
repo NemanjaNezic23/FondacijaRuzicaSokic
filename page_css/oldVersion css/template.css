@@ -222,8 +222,6 @@ body {
 }
 
 #prva div:nth-child(2) img {
-	transform: rotate(-90deg);
-
 	background-size: cover;
 	background-position: center;
   background-origin: border-box;
@@ -314,24 +312,6 @@ body {
 	}
 	/* ####################### */
 
-	.footer-distributed{
-		font: bold 14px sans-serif;
-	}
-
-	.footer-distributed .footer-left,
-	.footer-distributed .footer-center,
-	.footer-distributed .footer-right{
-		display: block;
-		width: 100%;
-		margin-bottom: 40px;
-		text-align: center;
-	}
-
-	.footer-distributed .footer-center i{
-		margin-left: 0;
-	}
-
-}
 
 @media only screen and (max-width: 576px) {
 	.media > img {

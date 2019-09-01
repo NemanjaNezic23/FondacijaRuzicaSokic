@@ -271,12 +271,9 @@ box-shadow: -1px 2px 21px 0px rgba(0,0,0,0.75);
 	margin: 20px 0;
 }
 
-/* fotografije sa prve sesije */
 #prva img {
-	transform: rotate(-90deg);
 	zoom: .1;
 }
-
 /* Izdavastvo kartica */
 #moja-gluma img {
 	width: 100%;
