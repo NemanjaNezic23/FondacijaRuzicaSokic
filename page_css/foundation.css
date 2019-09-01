@@ -1,8 +1,14 @@
-#nagradeSlajder{
+#ulogeSlajder{
     width: 50%;
 }
 
-#nagradeSlajder img {
+.navbar {
+    background:#34456a;
+
+}
+
+
+#ulogeSlajder img {
     height: 320px;
     width:100%;
 }
