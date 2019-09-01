@@ -21,8 +21,8 @@ body {
   height: 0;
 }
 
-footer {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-}
+@media screen only (max-width: 800px) {
+  footer {
+  position: relative;
+  }
+  }
