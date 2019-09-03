@@ -294,3 +294,11 @@ box-shadow: -1px 2px 21px 0px rgba(0,0,0,0.75);
     background-color: #34456a !important;
   }
 }
+
+.hoverFooterLink:hover {
+  background: #fff;
+}
+
+.hoverFooterIcon:hover {
+  color: #34456a;
+}
